@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <%-include ('partials/head') %>
+    
+  </head>
+  <body>
+    <%- include('partials/navigation')%>
+
+
+    <h6 class="display-5 my-5 text-upper fw-bold">
+      MATICULAR CERTIFICADO DE LIBERTAD Y TRADICIÓN
+    </h6>
+   
+    <div class="container">
+      <form class="row">
+
+        <div class="col-6">
+          <label for="ownerName" class="form-label">titular dueño</label>
+          <input type="text" class="form-control" id="ownerName" placeholder="nombre del titular del terreno">
+        </div>
+        <div class="col-6">
+          <label for="ownerID" class="form-label">documento de identicacion del titular</label>
+          <input type="text" class="form-control" id="ownerID" placeholder="documento de Identicacion titular del terreno">
+        </div>
+        <div class="col-12">
+          <label for="dataPropiety" class="form-label">informacion del predio</label>
+          <input type="text" class="form-control" id="dataPropiety" placeholder="ej: casa, lote, hacienda, finca">
+        </div>
+        
+        <div class="col-12">
+          <label for="dataLegal" class="form-label">datos juricos</label>
+          <input type="text" class="form-control" id="dataLegal" placeholder="valuos, prenda, enbargo, demandado, invadido">
+        </div>
+      </form>
+      
+    </div>
+    </div>
+    <div class="d-grid my-5 align-items-center justify-content-center">
+      <button type="button" class="btn btn-dark btn-primary btn-lg">MATICULAR</button>
+  </body>
+</html>
